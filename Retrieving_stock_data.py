@@ -22,9 +22,10 @@ Ticker_list_stripped = Ticker_list_stripped[:37]
 
 time_window = 5 #years
 
-for ticker in Ticker_list_stripped:
-    Stock_data = rq.get(f'https://financialmodelingprep.com/api/v3/income-statement/{ticker}?limit={time_window}&apikey=8a7b6a9b1759870d086b6a0773d1ce8f')
-    Stock_data = Stock_data.json()
+if __name__ == '__main__'
+    for ticker in Ticker_list_stripped:
+        Stock_data = rq.get(f'https://financialmodelingprep.com/api/v3/income-statement/{ticker}?limit={time_window}&apikey=8a7b6a9b1759870d086b6a0773d1ce8f')
+        Stock_data = Stock_data.json()
 
-    with open(f"/Users/kelvinbrinham/Desktop/Python_practice/Aperture_Task_1/Data/{ticker}.json", 'w') as f:
-        json.dump(Stock_data, f)
+        with open(f"/Users/kelvinbrinham/Desktop/Python_practice/Aperture_Task_1/Data/{ticker}.json", 'w') as f:
+            json.dump(Stock_data, f)
