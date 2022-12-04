@@ -2,6 +2,7 @@ My code consists of 2 scripts:
 main.py
 Retrieving_stock_data.py
 
+NB: THIS IS AN EXERCISE IN DATA MANIPULATION AND API USAGE, HENCE THE MISSING DATA ETC.
 ---
 Instructions:
 
@@ -18,9 +19,12 @@ Excel sheet and then saves data for each of these stocks as json files
 from the API.
 
 
-3. Run main.py. Ensure to change the file paths for the excel sheets
-(both the universe being read, and the output file 'Universe_revenues'
+3. Run main.py or main_Dates.py. Ensure to change the file paths for the excel sheets
+(both the universe being read, and the output file 'Universe_revenues'/'Universe_earning_report_dates'
 in my code).
+
+main.py adds annual revenue for each calendar year to the universe spreadsheet
+main_Dates.py adds the annual earning report dates for each calendar year to the universe spreadsheet
 
 Key:
 N/D = No Data. These stocks have no data, either because the API
