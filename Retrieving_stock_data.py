@@ -18,7 +18,7 @@ for Ticker in Ticker_list:
 
 
 #Trim Ticker list because only allowed 250 API requests per day on free subscription
-Ticker_list_stripped = Ticker_list_stripped[:37]
+Ticker_list_stripped = Ticker_list_stripped
 
 time_window = 5 #years
 
@@ -28,7 +28,7 @@ if __name__ == '__main__':
         Stock_data = Stock_data.json()
         if 'Error Message' in Stock_data:
             if Stock_data['Error Message'].startswith('Limit Reach'):
-                print('No requests left on API free trial')
+                # print('No requests left on API free trial')
                 continue
 
         with open(f"/Users/kelvinbrinham/Desktop/Python_practice/Aperture_Task_1/Data/{ticker}.json", 'w') as f:
