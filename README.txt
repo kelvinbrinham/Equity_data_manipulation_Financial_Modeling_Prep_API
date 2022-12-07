@@ -22,6 +22,8 @@ from the API.
 3. Run main.py or main_Dates.py. Ensure to change the file paths for the excel sheets
 (both the universe being read, and the output file 'Universe_revenues'/'Universe_earning_report_dates'
 in my code).
+IMPORTANT: ENSURE THE HYPERLINK 'link' IS SET TO THE SAME WORKBOOK AS THE FINAL SAVED ONE TO AVOID EXCEL 
+OPENING SEPERATE SHEETS.
 
 main.py adds annual revenue for each calendar year to the universe spreadsheet
 main_Dates.py adds the annual earning report dates for each calendar year to the universe spreadsheet
