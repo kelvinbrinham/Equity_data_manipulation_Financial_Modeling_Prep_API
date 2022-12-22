@@ -1,8 +1,10 @@
+# Equity_data_manipulation_Financial_Modeling_Prep_API
+
 My code consists of 2 scripts:
 main.py
 Retrieving_stock_data.py
 
-NB: THIS IS AN EXERCISE IN DATA MANIPULATION AND API USAGE, HENCE THE MISSING DATA ETC.
+NB: THIS IS AN EXERCISE IN DATA MANIPULATION (USING A FREE API) AND API USAGE, HENCE THE MISSING DATA ETC.
 ---
 Instructions:
 
