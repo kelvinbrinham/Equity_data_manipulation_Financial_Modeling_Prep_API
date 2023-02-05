@@ -22,9 +22,11 @@ Ticker_list_stripped = Ticker_list_stripped
 
 time_window = 5 #years
 
+API_KEY__ = ***PUT_YOUR_API_KEY_HERE***
+
 if __name__ == '__main__':
     for ticker in Ticker_list_stripped:
-        Stock_data = rq.get(f'https://financialmodelingprep.com/api/v3/income-statement/{ticker}?limit={time_window}&apikey=8a7b6a9b1759870d086b6a0773d1ce8f')
+        Stock_data = rq.get(f'https://financialmodelingprep.com/api/v3/income-statement/{ticker}?limit={time_window}&apikey=API_KEY__')
         Stock_data = Stock_data.json()
         if 'Error Message' in Stock_data:
             if Stock_data['Error Message'].startswith('Limit Reach'):
